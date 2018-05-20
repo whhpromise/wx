@@ -1,0 +1,18 @@
+<!--pages/p1/p1.wxml-->
+<view class='box clear'>
+
+   <view class='left'>
+      <block wx:for="{{arr}}">
+         <view bindtap='clk' data-id="{{index}}" class='{{index==curren?"active":""}} xxk'>{{item.tree.desc}}</view>
+      </block>
+   </view>
+
+    <block wx:for="{{arr}}">
+    <view class='right'  hidden='{{curren!==index}}'>
+       {{item.id}}
+        <image src="{{item.tree.nodes[0].tree.logo}}"></image> 
+    </view>  
+    </block> 
+
+     <view class='clear'></view> 
+</view>

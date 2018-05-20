@@ -1,0 +1,101 @@
+/**index.wxss**/
+/* 公共部分 */
+page{
+  /* background: #f5f5f5; */
+}
+.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.lt{
+  float: left;
+}
+/* 导航部分 */
+.xk{
+  float: left;
+  width: calc(100%/4);
+  text-align: center;
+}
+.active{
+   border-bottom:solid 6rpx red; 
+  color: red; 
+}
+/* tab部分 */
+/* 护肤 */
+.hf_box{
+  background: #f5f5f5;
+}
+input{
+  background: white;
+  padding: 10rpx;
+  padding-left: 70rpx;
+  width: 60%;
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+}
+ .icon{
+  position: absolute;
+  left: 36rpx;
+  top: 36rpx;
+  z-index: 1000;
+} 
+.search{
+   height: 70rpx; 
+  padding: 30rpx;
+  position: relative;
+}
+.search .button{
+  width: 20%;
+  height: 60rpx;
+  position: absolute;
+  top: 35rpx;
+  right: 0;
+  z-index: 9999
+}
+.sousuo_end{
+  padding-left:30rpx; 
+}
+/* 服装 */
+.fz_box{
+ background: #f5f5f5;
+}
+.fz_box .sptab{
+  background: #f5f5f5;
+  border-left: solid 8rpx yellow;
+  padding: 20rpx 0;
+  padding-left: 20rpx;
+}
+.fz_box .gd{
+  float: right;
+}
+.fz_box .con .con_1{
+  width: 100%;
+  padding: 20rpx;
+  background: white;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.fz_box .con .con_1 .mid{
+  width: 55%;
+  padding-left: 20rpx;
+}
+.fz_box .con .con_1 .mid .jiage{
+  margin-top: 50rpx;
+  color: red;
+  font-weight: 700;
+}
+.fz_box .con .image1{
+  width: 160rpx;
+  height: 160rpx;
+}
+.fz_box .con .right{
+  width: 13%;
+  height: 170rpx;
+}
+.fz_box .con .right .gwc{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 70rpx;
+}

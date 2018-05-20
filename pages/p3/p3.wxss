@@ -1,0 +1,69 @@
+/* pages/p3/p3.wxss */
+/* 公共部分 */
+page{
+background: #edefed;
+}
+.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.lt{
+  float: left;
+}
+.rt{
+  float: right;
+}
+/* 获取头像部分 */
+.touxiang{
+  text-align: center;
+  padding: 30rpx 0;
+  background: white;
+}
+.touxiang image{
+   width: 150rpx;
+   height: 150rpx;
+   border-radius:50%; 
+}
+/* nav 部分 */
+.nav{
+  background: white;
+  margin-top: 20rpx;
+  padding: 30rpx 0rpx;
+}
+.nav>view{
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20rpx 0rpx;
+}
+.nav>view image{
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 信息部分 */
+.xinxi{
+  margin-top: 20rpx;
+  background: white;
+}
+.xinxi .v1{
+  padding:20rpx;
+  border-bottom: solid 1px #edefed;
+}
+.xinxi .v1 text{
+  display: inline-block;
+  margin-left: 20rpx;
+}
+.xinxi .v1 image{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.btn{
+  margin-top: 20rpx;
+}
+.tuichu{
+  width: 90%;
+  margin: 0 auto;
+  background: red;
+}

@@ -1,0 +1,50 @@
+<!--pages/p3/p3.wxml-->
+<view class='box'>
+
+    <view class='touxiang'>
+       <image src="{{arr.avatarUrl}}"></image>
+       <view>{{arr.nickName}}</view>
+    </view>  
+
+    <view class='nav clear'>
+      <view>
+          <image src='../../images/icon_order.png'></image>
+           <view>待付款</view>
+      </view>
+      <view>
+          <image src='../../images/icon_order.png'></image>
+          <view>待收款</view>
+      </view>
+      <view>
+          <image src='../../images/icon_order.png'></image>
+           <view>待发货</view>
+      </view>
+      <view>
+          <image src='../../images/icon_order.png'></image>
+           <view>已完成</view>
+      </view>
+  
+    </view>
+    <view class='xinxi'>
+       <view class='v1'>
+          <image src='../../images/icon_address.png'></image>
+          <text>收货地址</text>
+       </view>
+       <view class='v1'>
+          <image src='../../images/icon_share.png'></image>
+          <text>扫码分享</text>
+       </view>
+       <view class='v1'>
+          <image src='../../images/icon_donate.png'></image>
+          <text>赞赏捐赠</text>
+       </view>
+       <view class='v1'>
+          <image src='../../images/icon_aboutus.png'></image>
+          <text>关于我们</text>
+       </view>
+    </view>
+
+    <view class='btn'>
+    <button class='tuichu'>退出</button>
+    </view>
+</view>

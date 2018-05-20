@@ -1,0 +1,29 @@
+<!--pages/p2/p2.wxml-->
+<view class='box'>
+  <block wx:for="{{arr2}}"> 
+    <view class='con_1 clear'>     
+          <view class='left lt'>
+            <image class='image1' src="{{item.imgUrl}}"></image>
+          </view>
+          <view class='mid lt'>
+             <view class='name'>{{item.name}}</view>
+             <view class='jiage'>￥{{item.price}}</view>
+             <view class='anniu clear'>
+                <view bindtap='clk2' data-id='{{index}}' class='button'>-</view>
+                <input class='b2' value='{{item.times}}'></input>
+                <view bindtap='clk' data-id='{{index}}' class='button'>+</view>
+             </view>
+          </view>
+          <view class='right lt'>
+             <image bindtap='dele' class='gwc' src='../../images/icon_delete.png'></image>
+          </view>         
+       </view>
+     </block>
+      <view class='add clear' hidden='{{yc1}}'>
+          <view class='heji lt'>合计:
+             <text class='much'> ￥{{sum}}</text>
+            </view>
+          <button class='jiesuan rt'>去结算({{pay}})</button>    
+      </view> 
+      <view hidden='{{yc2}}'>空空如也</view>
+</view>

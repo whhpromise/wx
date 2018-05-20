@@ -1,0 +1,81 @@
+/* pages/p2/p2.wxss */
+/* 公共样式部分 */
+page{
+  background: #f3ebe3;
+  padding-top: 20rpx;
+}
+.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.lt{
+  float: left;
+}
+.rt{
+  float: right;
+}
+/* con_1部分 */
+.con_1{
+  width: 100%;
+  padding: 20rpx;
+  background: white;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.con_1 .left{
+  width: 160rpx;
+  height: 160rpx;
+  border: solid 1px #dddddd;
+}
+.con_1 .mid{
+  width: 55%;
+  padding-left: 20rpx;
+}
+.con_1 .mid .anniu .button{
+  width: 80rpx;
+  height: 60rpx;
+  border: solid 1px #dddddd;
+  float: left;
+  text-align: center;
+  line-height: 60rpx;
+}
+.con_1 .mid .anniu input{
+  width: 80rpx;
+  height: 60rpx;
+  border: solid 1px #dddddd;
+  float: left;
+  text-align: center;
+  line-height: 60rpx;
+}
+.con_1 .mid .anniu .b2{
+  background: white;
+}
+.con_1 .mid .jiage{
+  margin-top: 50rpx;
+  color: red;
+  font-weight: 700;
+}
+.image1{
+  width: 160rpx;
+  height: 160rpx;
+}
+.right{
+  width: 20%;
+}
+.right .gwc{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 60rpx;
+}
+.add{
+  padding: 20rpx;
+}
+.jiesuan{
+  width: 40%;
+  background: red;
+  color: white;
+}
+.much{
+  color: red;
+}

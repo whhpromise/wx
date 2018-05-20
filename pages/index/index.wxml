@@ -1,0 +1,64 @@
+<!--index.wxml-->
+ <view class='box'> <!-- 最外层父盒子 -->
+
+<view class='clear nav'> <!-- 导航栏父盒子 -->
+<block wx:for="{{arr}}">
+   <view bindtap='clk' data-id="{{index}}" class='xk {{index==curren?"active":""}}'>{{item}}</view>  
+</block>
+</view>
+
+<view><!-- tab最外层父盒子 -->
+<!-- -----------------------------护肤-------------------------------- -->
+  <view hidden='{{curren!==0}}' class='clear hf_box'>
+    <swiper indicator-dots circular interval="{{interval}}" autoplay>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+     </swiper-item>
+   </block>
+ </swiper>
+ <view class='search clear'> <!-- input父盒子 -->
+  <icon class='icon' type='search'></icon>
+    <input bindinput='sarchFn'>
+    </input>
+    <view class='button' bindtap='searchMusic'>搜索</view>
+</view>
+ <scroll-view class='sousuo_end' scroll-y style="height:200px" bindscrolltolower="bottom">
+     <block wx:for="{{gequ}}">
+     <view>{{item.albumname}}</view>
+     </block>
+     <view hidden='{{datahide}}'>没有数据</view>
+     <view style='color:red' hidden='{{bottomhide}}'>加载中...</view>
+     </scroll-view>
+</view>
+<!-- --------------------------------服装-------------------------------->
+<view hidden='{{curren!==1}}' class='fz_box'>
+   <view class='sptab'>
+      <text>商品列表</text>
+      <text class='gd'>更多</text>
+   </view>
+
+   <view class='con'>
+     <block wx:for="{{goodslist}}">
+       <view class='con_1 clear'>
+          <view class='left lt'>
+            <image class='image1' src="{{item.imgUrl}}"></image>
+          </view>
+          <view class='mid lt'>
+             <view class='name'>{{item.name}}</view>
+             <view class='jiage'>￥{{item.price}}</view>
+          </view>
+          <view class='right lt'>
+             <image data-id='{{item.id}}' bindtap='add' class='gwc' src='../../images/icon_cart_selected.png'></image>
+          </view>
+       </view>
+     </block>
+   </view>
+</view>
+<!-- --------------------------------香水----------------------------- -->
+<view hidden='{{curren!==2}}'>3</view>
+<!-- ---------------------------------个人护理---------------------------- -->
+<view hidden='{{curren!==3}}'>4</view>
+</view>
+</view> 
+
